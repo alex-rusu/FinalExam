@@ -1,0 +1,9 @@
+<ul class="list-group">
+    <li class = "list-group-item active">Vaccinated Residents</li>
+    <li *ngFor="let resident of residents" class="list-group-item"
+      (click) = "selectResident(resident)"
+        [ngClass] ="{'active': resident.id == selectedResident.id}"
+      >
+     {{resident.name}}, {{resident.age}}, {{resident.vaccineProduct}}, {{resident.vaccineType}}, {{resident.date}}
+    </li>
+  </ul>
