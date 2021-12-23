@@ -10,7 +10,8 @@ app.get('/*', function(req,res) {
 //res.sendFile(path.join(__dirname + "/dist/FinalExam/src/index.html"));   
 //res.sendFile(path.join(__dirname + '/dist/FinalExam/src/index.html'));
 //res.sendFile(path.join(__dirname + "/dist/FinalExam/index.html"));     
-res.sendFile(path.join('/FinalExam' + __dirname + '/dist/FinalExam/index.html')); //original
+//res.sendFile(path.join('/FinalExam' + __dirname + '/dist/FinalExam/index.html'));
+res.sendFile(path.join(__dirname + '/dist/FinalExam/index.html')); //original
 });
 // Start the app by listening on the default Heroku port
 app.listen(process.env.PORT || 8080);
