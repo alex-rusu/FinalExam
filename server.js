@@ -8,8 +8,8 @@ app.use(cors())
 app.use(express.static(__dirname + '/dist/FinalExam'));
 app.get('/*', function(req,res) {
 //res.sendFile(path.join(__dirname + "/dist/FinalExam/src/index.html"));   
-res.sendFile(path.join(__dirname + '/dist/FinalExam/src/index.html'));
-//res.sendFile(path.join(__dirname + "/dist/FinalExam/index.html"));     
+//res.sendFile(path.join(__dirname + '/dist/FinalExam/src/index.html'));
+res.sendFile(path.join(__dirname + "/dist/FinalExam/index.html"));     
 //res.sendFile(path.join(__dirname + '/dist/FinalExam/index.html')); original
 });
 // Start the app by listening on the default Heroku port
